@@ -1,0 +1,15 @@
+{
+  "id": "character-id",
+  "name": "Character Name",
+  "type": "humanoid | quadruped | segmented | creature | object | hybrid | custom",
+  "version": "0.1.0",
+  "status": "draft",
+  "source_reference": "",
+  "rig_type": "pending_runtime_review",
+  "capabilities": [],
+  "runtime_compatibility": "pending",
+  "qc": {
+    "status": "not_tested",
+    "notes": []
+  }
+}
