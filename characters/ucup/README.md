@@ -1,3 +1,7 @@
 # Ucup
 
-Placeholder untuk benchmark humanoid utama MEKANIVO. Source geometry dan rig akan dibuat setelah runtime Motion 2.9.2 diperiksa dan kompatibilitas ditetapkan.
+Karakter humanoid utama MEKANIVO. Paket terbaru yang tersedia adalah **v0.3.0-draft**.
+- [v0.3.0-draft package](./v0.3.0-draft/) — source, preview, manifest, dan arsip versi sebelumnya.
+- Status: draft; belum di-approve dan belum diverifikasi di MEKANIVO Motion.
+
+Baca manifest dan unresolved issues sebelum mengintegrasikan atau mengubah rig.
