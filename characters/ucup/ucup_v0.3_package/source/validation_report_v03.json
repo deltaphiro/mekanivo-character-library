@@ -1,0 +1,138 @@
+{
+ "svg_parses": true,
+ "embedded_raster": false,
+ "semantic_ids": 28,
+ "duplicate_ids": 0,
+ "invalid_renders": [],
+ "reel_frames": 720,
+ "deterministic_replay": true,
+ "nan_in_reel": false,
+ "reel_final_pose_error": {
+  "torso": 0.0,
+  "head": 0.0,
+  "R_abd": 0.0,
+  "R_flex": 0.0,
+  "L_abd": 0.0,
+  "L_flex": 0.0,
+  "squat": 0.0,
+  "twist": 0.0,
+  "hip": 0.0
+ },
+ "reel_cap_offsets_applied (clamped by rig)": {
+  "dy_px": [
+   -1,
+   1
+  ],
+  "rot_deg": [
+   -0.59,
+   0.91
+  ]
+ },
+ "reel_max_abs": {
+  "R_abd": 161.7,
+  "R_flex": 111.2,
+  "head": 12.9,
+  "face_x": 10.8,
+  "torso": 7.0,
+  "twist": 0.8,
+  "squat": 0.8,
+  "hip": 3.5
+ },
+ "reel_ground_contact": {
+  "max_support_foot_error_px": 0.0,
+  "max_second_foot_float_px": 0.0
+ },
+ "mp4": {
+  "width": 720,
+  "height": 1000,
+  "r_frame_rate": "30/1",
+  "nb_frames": "720"
+ },
+ "widths_px_arms_raised": {
+  "v0.2": {
+   "chest": 160,
+   "sweater low": 188,
+   "hem": 188,
+   "pants top": 188,
+   "hip": 190,
+   "thigh": 190,
+   "shin": 196
+  },
+  "v0.3": {
+   "chest": 170,
+   "sweater low": 172,
+   "hem": 160,
+   "pants top": 158,
+   "hip": 159,
+   "thigh": 160,
+   "shin": 164
+  }
+ },
+ "pants_to_chest_ratio": {
+  "v0.2": 1.18,
+  "v0.3": 0.93
+ },
+ "hair_above_hat_line_px (head-local, lower = better)": {
+  "neutral": {
+   "v0.2_px": 1136,
+   "v0.3_px_real_behaviour(clamped)": 20,
+   "v0.3_px_clamp_lifted": 20
+  },
+  "head +15": {
+   "v0.2_px": 1136,
+   "v0.3_px_real_behaviour(clamped)": 20,
+   "v0.3_px_clamp_lifted": 20
+  },
+  "head \u221215": {
+   "v0.2_px": 1136,
+   "v0.3_px_real_behaviour(clamped)": 20,
+   "v0.3_px_clamp_lifted": 20
+  },
+  "head +15 + face turn +12": {
+   "v0.2_px": 1136,
+   "v0.3_px_real_behaviour(clamped)": 20,
+   "v0.3_px_clamp_lifted": 20
+  },
+  "torso +12 (head follows)": {
+   "v0.2_px": 1554,
+   "v0.3_px_real_behaviour(clamped)": 22,
+   "v0.3_px_clamp_lifted": 22
+  },
+  "bend 1.0": {
+   "v0.2_px": 0,
+   "v0.3_px_real_behaviour(clamped)": 0,
+   "v0.3_px_clamp_lifted": 0
+  },
+  "STRESS cap up 6px, rot \u22123\u00b0": {
+   "v0.2_px": 5096,
+   "v0.3_px_real_behaviour(clamped)": 27,
+   "v0.3_px_clamp_lifted": 35
+  },
+  "STRESS cap down 6px, rot +3\u00b0": {
+   "v0.2_px": 465,
+   "v0.3_px_real_behaviour(clamped)": 25,
+   "v0.3_px_clamp_lifted": 16
+  }
+ },
+ "chin_shadow_to_sweater_px": {
+  "v0.2": 49,
+  "v0.3": 31
+ },
+ "diag_components_v0.3": {
+  "01 hands on hips": 1,
+  "02 arms crossed": 1,
+  "03 one arm up": 1,
+  "04 both arms up": 1,
+  "05 hand on head": 1,
+  "06 reach forward": 1,
+  "07 reach far side": 1,
+  "08 bend forward": 1,
+  "09 squat": 1,
+  "10 twist + arm": 1
+ },
+ "notes": [
+  "Hair metric = hair pixels above the hat lower-edge line in head-local frame; ~20px residual is the intended side-hair edge at the hat line.",
+  "Connectivity proves only that nothing detaches; correctness of occlusion was judged visually.",
+  "Foot contact is solver self-consistency, not measured in pixels."
+ ]
+}

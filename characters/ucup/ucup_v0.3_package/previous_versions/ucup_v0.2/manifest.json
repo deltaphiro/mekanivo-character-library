@@ -1,0 +1,28 @@
+{
+  "id": "ucup", "version": "0.2.0-draft", "based_on": "0.1.0-draft (kept intact at ../ucup_v0.1/, recoverable)",
+  "status": "structural revision, motion-tested (draft). NOT approved, NOT promoted to library",
+  "scope": "construction only: torso, shoulder, arm/sleeve/hand layering, legs, layer order. Face, cap, hair, clothing design, palette, hand art unchanged.",
+  "changes": {
+    "torso": "single slab -> chest + abdomen/hem (lean bends at waist seam), twist (chest squeeze + logo shift + shoulder offset), bend (foreshortened chest, head/shoulders drop)",
+    "shoulder": "pivot (372,322)->(368,326); shoulder lifts automatically when arm rises (rhythm); per-arm shrug",
+    "arm": "seamless elbow union, flex-driven elbow creases, forward foreshortening (fwd) with larger hand",
+    "sleeve_hand": "removed the cuff patch painted over the hand; hand now sits under the sleeve lip and emerges from it",
+    "layering": "per-arm front/back + arm_top (which arm overlaps the other)",
+    "legs": "uniform rubber squash replaced by thigh foreshortening + knees-out squat; hip tilt weight shift; auto foot planting (support leg straight, other compresses)",
+    "secondary_motion": "added elbow lag and body-drop cap lag on top of v0.1 head/cap/wrist lag"
+  },
+  "tested_ranges": {"arm_abd": "0..150 (reel overshoots to ~162)", "elbow_flex": "0..155", "twist": "-1..1 (=+-35deg cheat)", "bend": "0..1.2", "squat": "0..1.1", "hip": "+-4", "torso": "+-12"},
+  "verified_in_output": ["10 diagnostic poses rendered and inspected", "cuff/hand emergence close-ups", "silhouette stays one connected piece in all diag and stress renders", "foot contact numerically consistent over the 600-frame reel", "reel deterministic and returns to rest"],
+  "unresolved": [
+    "Twist is a front-view cheat: modest effect, no real turn; head turn still only a face slide.",
+    "Reach forward is an approximation (short fat sleeve + enlarged palm); reads as palm toward camera, not a convincing arm pointing at the viewer.",
+    "Squat: thigh tops leave small wing-like corners at the hips; no seated pose with prop.",
+    "Bend forward is a vertical squash; at bend>0.9 neck disappears and logo is heavily squashed.",
+    "Hand art is still simple (fingers merge, small fists); hand-on-head covers the brows.",
+    "Back-layer arms (R_z/L_z=back) only exercised in diag pose 10, not in the reel.",
+    "Cap secondary motion still subtle (max ~1 deg in reel).",
+    "v0.1 baseline poses were authored with v0.1's own parameters, so they show its capability limits, not necessarily its best possible poses.",
+    "Not loaded or verified in MEKANIVO Motion; no library entry created."
+  ],
+  "validation": "source/validation_report_v02.json"
+}

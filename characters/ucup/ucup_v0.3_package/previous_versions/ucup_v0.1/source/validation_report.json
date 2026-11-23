@@ -1,0 +1,40 @@
+{
+ "svg_parses": true,
+ "has_embedded_raster": false,
+ "element_counts": {
+  "g": 25,
+  "path": 62,
+  "circle": 8,
+  "ellipse": 6
+ },
+ "semantic_ids": 27,
+ "duplicate_ids": 0,
+ "required_joints_present": true,
+ "invalid_renders": [],
+ "reel_frames": 600,
+ "nan_in_reel": false,
+ "reel_rest_return_error_deg": {
+  "torso": 0.0,
+  "head": 0.0,
+  "R_abd": 0.0,
+  "R_flex": 0.0,
+  "L_abd": 0.0,
+  "L_flex": 0.0
+ },
+ "reel_max_abs": {
+  "head": 8.0,
+  "torso": 5.3,
+  "R_abd": 117.6,
+  "R_flex": 175.3,
+  "root_y": 58.0,
+  "cap_rot": 2.5
+ },
+ "mp4": {
+  "width": 720,
+  "height": 1000,
+  "r_frame_rate": "30/1",
+  "nb_frames": "600"
+ },
+ "deterministic_replay": true,
+ "note": "re-checked after ear id fix; reel max elbow flex 151, arm abd min -52 (think pose)"
+}

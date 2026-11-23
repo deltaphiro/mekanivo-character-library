@@ -1,0 +1,35 @@
+{
+  "id": "ucup",
+  "name": "Ucup",
+  "version": "0.1.0-draft",
+  "status": "motion-tested (draft, awaiting user review)",
+  "statuses": {
+    "vector-source-created": "passed (procedural SVG, no raster, validated)",
+    "parts-prepared": "passed (parts extracted by semantic id, see parts_sheet.png)",
+    "rig-implemented": "passed (FK hybrid vector cutout + IK authoring helper)",
+    "behavior-implemented": "passed (20 s reel: idle, wave, explain, point, think/aha, thumbs/wink, recoil/shrug, hop)",
+    "motion-tested": "passed for the front-view rig (reel rendered and inspected)",
+    "approved": "NO - waiting for user approval",
+    "production-ready": "NO",
+    "runtime-verified": "NOT TESTED (no MEKANIVO Motion adapter built or verified)"
+  },
+  "reference": "user-supplied Ucup character sheet (1795337616561_gambar_20261122142302.jpg)",
+  "source_format": "procedural Python -> SVG (ucup_rig.py); ucup_rest.svg = rigged rest pose with semantic ids",
+  "rig": {"type": "hybrid vector cutout FK", "viewBox": "0 0 600 900", "ground_y": 860, "side_naming": "R/L = screen right/left",
+          "joints": ["root","torso(waist)","head(neck)","cap(lag)","arm-R/L(shoulder)","forearm(elbow)","hand(wrist, 9 states)","leg-R/L(hip)","shin(knee)","foot(ankle)"],
+          "tested_ranges_deg": {"torso":"+-12","head":"+-15","arm_abd":"-55..150","elbow_flex":"0..155","thigh":"-4..30","knee":"0..35"},
+          "face": "parametric: brows, eyes (open/arc/gaze), mouth (width/open/smile/skew), blush, sweat, mask",
+          "root": "root_x/root_y with planted legs (squash/stretch 0.78-1.05)"},
+  "library": {"expressions": 17, "visemes": 5, "hand_states": 9, "poses": 11, "file": "source/states_library.json"},
+  "limitations": [
+    "Front-view rig only. Side/back/3-4 views from the reference are not rebuilt; head turn is only a +-12px face slide.",
+    "No sit/crouch-seated or walk cycle (front-view foreshortening not solved).",
+    "Hands are simple flat shapes: no per-finger separation lines yet.",
+    "Reference proportions conflict (hero ~5 heads vs turnaround ~4.2); 4.5 chosen.",
+    "Pockets pose has no pocket overlay; hands just tuck under sleeve ends.",
+    "Cap/hair secondary motion is subtle (cap lag max ~2.5 deg).",
+    "Not loaded or verified in MEKANIVO Motion; not added to any shared library."
+  ],
+  "inferred_areas": ["hair top (cap-off)","neck","knees","shoe heel/sole","sleeve inner and elbow overlap","hand shapes beyond the sheet","all NEW expressions"],
+  "validation": "source/validation_report.json"
+}

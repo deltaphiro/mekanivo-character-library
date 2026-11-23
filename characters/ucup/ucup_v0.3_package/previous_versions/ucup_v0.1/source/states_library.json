@@ -1,0 +1,498 @@
+{
+ "expressions": {
+  "neutral": {
+   "tag": "REF",
+   "params": {}
+  },
+  "happy": {
+   "tag": "REF",
+   "params": {
+    "m_open": 9,
+    "m_w": 30,
+    "m_smile": 1.3,
+    "bR_y": -2,
+    "bL_y": -2
+   }
+  },
+  "surprised": {
+   "tag": "REF",
+   "params": {
+    "eR_o": 1.22,
+    "eL_o": 1.22,
+    "bR_y": -9,
+    "bL_y": -9,
+    "bR_c": 4,
+    "bL_c": 4,
+    "m_w": 13,
+    "m_open": 15,
+    "m_smile": 0
+   }
+  },
+  "wink": {
+   "tag": "REF",
+   "params": {
+    "eR_o": 0,
+    "eR_arc": 1,
+    "m_smile": 1.4,
+    "m_skew": 1.2,
+    "m_x": 3,
+    "bR_y": -1.5
+   }
+  },
+  "sad": {
+   "tag": "REF",
+   "params": {
+    "bR_r": -9,
+    "bL_r": -9,
+    "bR_y": -1,
+    "bL_y": -1,
+    "m_smile": -1.3,
+    "m_w": 22,
+    "eR_o": 0.92,
+    "eL_o": 0.92
+   }
+  },
+  "tired": {
+   "tag": "REF",
+   "params": {
+    "eR_o": 0.3,
+    "eL_o": 0.3,
+    "bR_y": 3,
+    "bL_y": 3,
+    "bR_r": -4,
+    "bL_r": -4,
+    "m_smile": -0.6,
+    "m_w": 20
+   }
+  },
+  "eyes_closed": {
+   "tag": "REF",
+   "params": {
+    "eR_o": 0,
+    "eL_o": 0,
+    "eR_arc": -1,
+    "eL_arc": -1,
+    "bR_r": -5,
+    "bL_r": -5,
+    "m_smile": -0.8,
+    "m_w": 20
+   }
+  },
+  "masked": {
+   "tag": "REF",
+   "params": {
+    "mask": 1,
+    "eR_o": 0,
+    "eL_o": 0,
+    "bR_r": -3,
+    "bL_r": -3
+   }
+  },
+  "curious": {
+   "tag": "NEW",
+   "params": {
+    "bR_y": -9,
+    "bL_y": 1,
+    "bL_r": 5,
+    "bR_c": 4,
+    "gx": 0.9,
+    "gy": -0.7,
+    "m_w": 16,
+    "m_smile": 0.35,
+    "m_skew": 0.9,
+    "m_x": 5
+   }
+  },
+  "smirk": {
+   "tag": "NEW",
+   "params": {
+    "bR_y": -5,
+    "bL_y": 1,
+    "eR_o": 0.85,
+    "eL_o": 0.85,
+    "m_smile": 1.6,
+    "m_skew": 1.7,
+    "m_w": 25,
+    "m_x": 3
+   }
+  },
+  "excited": {
+   "tag": "NEW",
+   "params": {
+    "eR_o": 1.2,
+    "eL_o": 1.2,
+    "bR_y": -8,
+    "bL_y": -8,
+    "bR_c": 3.5,
+    "bL_c": 3.5,
+    "m_open": 13,
+    "m_w": 34,
+    "m_smile": 1.7
+   }
+  },
+  "laugh": {
+   "tag": "NEW",
+   "params": {
+    "eR_o": 0,
+    "eL_o": 0,
+    "eR_arc": 1,
+    "eL_arc": 1,
+    "bR_y": -4,
+    "bL_y": -4,
+    "m_open": 16,
+    "m_w": 38,
+    "m_smile": 1.9,
+    "blush": 0.35
+   }
+  },
+  "confused": {
+   "tag": "NEW",
+   "params": {
+    "bL_y": -7,
+    "bL_r": -6,
+    "bR_y": 1,
+    "bR_r": 6,
+    "m_w": 17,
+    "m_smile": -0.25,
+    "m_skew": -1.3,
+    "m_x": -3,
+    "gx": -0.5,
+    "gy": -0.4
+   }
+  },
+  "focused": {
+   "tag": "NEW",
+   "params": {
+    "bR_r": 7,
+    "bL_r": 7,
+    "bR_y": 2,
+    "bL_y": 2,
+    "eR_o": 0.92,
+    "eL_o": 0.92,
+    "m_w": 19,
+    "m_smile": 0.1
+   }
+  },
+  "skeptical": {
+   "tag": "NEW",
+   "params": {
+    "eR_o": 0.5,
+    "eL_o": 0.82,
+    "bR_y": -7,
+    "bL_r": 6,
+    "bL_y": 2,
+    "m_w": 18,
+    "m_smile": -0.2,
+    "m_skew": 1.6,
+    "m_x": 3
+   }
+  },
+  "embarrassed": {
+   "tag": "NEW",
+   "params": {
+    "blush": 1,
+    "sweat": 0.8,
+    "bR_r": -7,
+    "bL_r": -7,
+    "bR_y": -2,
+    "bL_y": -2,
+    "m_w": 18,
+    "m_smile": 0.5,
+    "m_skew": -1.2,
+    "gx": -0.8,
+    "gy": 0.6
+   }
+  },
+  "worried": {
+   "tag": "NEW",
+   "params": {
+    "bR_r": -10,
+    "bL_r": -10,
+    "bR_y": -3,
+    "bL_y": -3,
+    "m_smile": -0.9,
+    "m_w": 18,
+    "sweat": 0.6,
+    "eR_o": 1.1,
+    "eL_o": 1.1
+   }
+  }
+ },
+ "visemes": {
+  "M": {
+   "m_w": 18,
+   "m_open": 0,
+   "m_smile": 0.2
+  },
+  "A": {
+   "m_w": 22,
+   "m_open": 12,
+   "m_smile": 0.3
+  },
+  "E": {
+   "m_w": 32,
+   "m_open": 6.5,
+   "m_smile": 1.2
+  },
+  "O": {
+   "m_w": 12,
+   "m_open": 12,
+   "m_smile": 0
+  },
+  "U": {
+   "m_w": 9,
+   "m_open": 8,
+   "m_smile": 0
+  }
+ },
+ "hand_states": [
+  "relaxed",
+  "open",
+  "wave",
+  "present",
+  "point",
+  "thumbs",
+  "fist",
+  "peace",
+  "tuck"
+ ],
+ "poses": {
+  "rest": {},
+  "hands_in_pockets": {
+   "R_abd": -1.91,
+   "R_flex": 7.95,
+   "R_wrist": 0,
+   "R_hand": "tuck",
+   "L_abd": -26.26,
+   "L_flex": 7.95,
+   "L_wrist": 0,
+   "L_hand": "tuck",
+   "torso": 0,
+   "head": -2,
+   "bR_y": -5,
+   "bL_y": 1,
+   "eR_o": 0.85,
+   "eL_o": 0.85,
+   "m_smile": 1.6,
+   "m_skew": 1.7,
+   "m_w": 25,
+   "m_x": 3
+  },
+  "explain": {
+   "R_abd": -28.38,
+   "R_flex": -123.69,
+   "R_wrist": -30,
+   "R_hand": "present",
+   "L_abd": 20,
+   "L_flex": 22,
+   "torso": 2,
+   "head": 3,
+   "m_open": 9,
+   "m_w": 30,
+   "m_smile": 1.3,
+   "bR_y": -2,
+   "bL_y": -2
+  },
+  "point": {
+   "R_abd": 49.73,
+   "R_flex": -81.12,
+   "R_wrist": 0,
+   "R_hand": "point",
+   "torso": -2,
+   "head": -4,
+   "bR_r": 7,
+   "bL_r": 7,
+   "bR_y": 2,
+   "bL_y": 2,
+   "eR_o": 0.92,
+   "eL_o": 0.92,
+   "m_w": 19,
+   "m_smile": 0.1,
+   "gx": 1
+  },
+  "thumbs_up": {
+   "R_abd": 37.26,
+   "R_flex": -159.17,
+   "R_wrist": 0,
+   "R_hand": "thumbs",
+   "torso": 1,
+   "head": 3,
+   "m_open": 9,
+   "m_w": 30,
+   "m_smile": 1.3,
+   "bR_y": -2,
+   "bL_y": -2
+  },
+  "wave": {
+   "R_abd": 103.44,
+   "R_flex": -94.49,
+   "R_wrist": 10,
+   "R_hand": "wave",
+   "head": 4,
+   "torso": -1,
+   "m_open": 9,
+   "m_w": 30,
+   "m_smile": 1.3,
+   "bR_y": -2,
+   "bL_y": -2
+  },
+  "think": {
+   "R_abd": -52.45,
+   "R_flex": 151.18,
+   "R_wrist": 6,
+   "R_hand": "fist",
+   "L_abd": 26,
+   "L_flex": 70,
+   "L_wrist": -10,
+   "L_hand": "relaxed",
+   "head": -5,
+   "torso": 1,
+   "bR_y": -9,
+   "bL_y": 1,
+   "bL_r": 5,
+   "bR_c": 4,
+   "gx": 0.9,
+   "gy": -0.7,
+   "m_w": 16,
+   "m_smile": 0.35,
+   "m_skew": 0.9,
+   "m_x": 5
+  },
+  "shrug": {
+   "R_abd": 38,
+   "R_flex": 48,
+   "R_wrist": -25,
+   "R_hand": "present",
+   "L_abd": 38,
+   "L_flex": 48,
+   "L_wrist": -25,
+   "L_hand": "present",
+   "shrug": 10,
+   "head": 7,
+   "torso": 0,
+   "blush": 1,
+   "sweat": 0.8,
+   "bR_r": -7,
+   "bL_r": -7,
+   "bR_y": -2,
+   "bL_y": -2,
+   "m_w": 18,
+   "m_smile": 0.5,
+   "m_skew": -1.2,
+   "gx": -0.8,
+   "gy": 0.6
+  },
+  "surprised_recoil": {
+   "R_abd": 34,
+   "R_flex": 62,
+   "R_wrist": -18,
+   "R_hand": "open",
+   "L_abd": 34,
+   "L_flex": 62,
+   "L_wrist": -18,
+   "L_hand": "open",
+   "torso": -5,
+   "head": -4,
+   "root_y": -3,
+   "eR_o": 1.22,
+   "eL_o": 1.22,
+   "bR_y": -9,
+   "bL_y": -9,
+   "bR_c": 4,
+   "bL_c": 4,
+   "m_w": 13,
+   "m_open": 15,
+   "m_smile": 0
+  },
+  "cheer": {
+   "R_abd": 117.61,
+   "R_flex": -66.96,
+   "R_wrist": 0,
+   "R_hand": "fist",
+   "L_abd": 117.61,
+   "L_flex": -66.96,
+   "L_wrist": 0,
+   "L_hand": "fist",
+   "head": 0,
+   "root_y": -14,
+   "plant": 0,
+   "eR_o": 0,
+   "eL_o": 0,
+   "eR_arc": 1,
+   "eL_arc": 1,
+   "bR_y": -4,
+   "bL_y": -4,
+   "m_open": 16,
+   "m_w": 38,
+   "m_smile": 1.9,
+   "blush": 0.35
+  },
+  "cap_off_scratch": {
+   "R_abd": -230.71,
+   "R_flex": -115.1,
+   "R_wrist": -30,
+   "R_hand": "open",
+   "cap_on": 0,
+   "head": 5,
+   "bL_y": -7,
+   "bL_r": -6,
+   "bR_y": 1,
+   "bR_r": 6,
+   "m_w": 17,
+   "m_smile": -0.25,
+   "m_skew": -1.3,
+   "m_x": -3,
+   "gx": -0.5,
+   "gy": -0.4
+  }
+ },
+ "defaults": {
+  "root_x": 0,
+  "root_y": 0,
+  "plant": 1,
+  "torso": 0,
+  "breath": 0,
+  "head": 0,
+  "face_x": 0,
+  "face_y": 0,
+  "cap_on": 1,
+  "cap_rot": 0,
+  "cap_dy": 0,
+  "shrug": 0,
+  "R_abd": 9,
+  "R_flex": 6,
+  "R_wrist": 0,
+  "R_hand": "relaxed",
+  "L_abd": 9,
+  "L_flex": 6,
+  "L_wrist": 0,
+  "L_hand": "relaxed",
+  "R_thigh": 1.5,
+  "R_knee": 0,
+  "R_foot": 0,
+  "L_thigh": 1.5,
+  "L_knee": 0,
+  "L_foot": 0,
+  "bR_y": 0,
+  "bR_r": 0,
+  "bR_c": 2.5,
+  "bL_y": 0,
+  "bL_r": 0,
+  "bL_c": 2.5,
+  "eR_o": 1,
+  "eL_o": 1,
+  "eR_arc": -1,
+  "eL_arc": -1,
+  "gx": 0,
+  "gy": 0,
+  "m_w": 26,
+  "m_open": 0,
+  "m_smile": 1.0,
+  "m_skew": 0,
+  "m_x": 0,
+  "m_y": 0,
+  "blush": 0,
+  "sweat": 0,
+  "mask": 0
+ }
+}

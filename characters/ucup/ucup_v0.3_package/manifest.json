@@ -1,0 +1,26 @@
+{
+  "id": "ucup", "version": "0.3.0-draft", "based_on": "0.2.0-draft (kept intact at ../ucup_v0.2/; v0.1 at ../ucup_v0.1/)",
+  "status": "proportion/attachment revision, motion-tested (draft). NOT approved, NOT promoted to library",
+  "scope": "waist/sweater/pants proportions, neck + head seat, hat/hair attachment. Arm articulation, face, palette, outfit identity unchanged.",
+  "changes": {
+    "sweater": "172 wide (was 160-164), curved relaxed sides, bloused body over a narrower 164 rib hem band; chest/hem corner step removed",
+    "pants": "waist 152 and legs 75 each (was 188 waist, 90 per leg); pelvis fill narrower than sweater; soft shadow under hem; hem tab and shoe width rescaled to the new legs",
+    "neck_head": "head seated 14px lower than v0.2 (HEAD_DY 18->32), neckline scoop reduced, collar rib redrawn; chin-to-collar 49px -> 31px at centre",
+    "hat": "visor and crown share ONE transform (v0.2: visor static, crown moved alone); cap follow-through clamped to +-1px / +-1deg",
+    "hair": "with cap on, scalp hair is cut inside the crown (top edge y=128) and flares to side hair only below the hat edge; cap off keeps the full bowl cut",
+    "twist": "abdomen twist scale 0.5->0.85 of chest to reduce the hem step"
+  },
+  "measured": {"pants_top_over_chest_width": {"v0.2": 1.18, "v0.3": 0.93}, "hair_px_above_hat_line_neutral": {"v0.2": 1136, "v0.3": 20},
+               "hair_px_above_hat_line_cap_up_6px": {"v0.2": 5096, "v0.3": 35}},
+  "unresolved": [
+    "Hat follow-through is now almost gone (+-1px): the cost of a rigid attachment. Brim flutter would need a separate deformation layer.",
+    "Residual ~20px of side hair sits at the hat line by design; not a defect but not zero.",
+    "Neck still ~31px from chin to collar at centre; shorter than v0.2 but still longer than the reference's near-zero neck. Needs a style decision.",
+    "Twist still leaves a small notch at the hem on the far side (reduced, not eliminated).",
+    "Squat still shows small wing-like pants corners at the hips and a light wedge between hem and thighs.",
+    "Reach forward remains an approximation; hand art is still simple; hand-on-head covers the brows.",
+    "Back-layer arms (R_z/L_z=back) not exercised in the reel.",
+    "Not loaded or verified in MEKANIVO Motion; no library entry created."
+  ],
+  "validation": "source/validation_report_v03.json"
+}

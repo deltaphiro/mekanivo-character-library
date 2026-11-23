@@ -1,0 +1,131 @@
+{
+ "svg_parses": true,
+ "embedded_raster": false,
+ "semantic_ids": 28,
+ "duplicate_ids": 0,
+ "required_joints_present": true,
+ "invalid_renders": [],
+ "reel_frames": 600,
+ "deterministic_replay": true,
+ "nan_in_reel": false,
+ "reel_final_pose_error": {
+  "torso": 0.0,
+  "head": 0.0,
+  "R_abd": 0.0,
+  "R_flex": 0.0,
+  "L_abd": 0.0,
+  "L_flex": 0.0,
+  "squat": 0.0,
+  "twist": 0.0,
+  "hip": 0.0
+ },
+ "reel_max_abs": {
+  "R_abd": 161.7,
+  "R_flex": 111.2,
+  "torso": 7.0,
+  "twist": 0.8,
+  "squat": 0.8,
+  "hip": 3.5,
+  "cap_rot": 0.9
+ },
+ "mp4": {
+  "width": 720,
+  "height": 1000,
+  "r_frame_rate": "30/1",
+  "nb_frames": "600"
+ },
+ "diag_components(1=clean single silhouette)": {
+  "01 hands on hips": {
+   "v0.1_components": 1,
+   "v0.2_components": 1
+  },
+  "02 arms crossed": {
+   "v0.1_components": 1,
+   "v0.2_components": 1
+  },
+  "03 one arm up": {
+   "v0.1_components": 1,
+   "v0.2_components": 1
+  },
+  "04 both arms up": {
+   "v0.1_components": 1,
+   "v0.2_components": 1
+  },
+  "05 hand on head": {
+   "v0.1_components": 1,
+   "v0.2_components": 1
+  },
+  "06 reach forward": {
+   "v0.1_components": 1,
+   "v0.2_components": 1
+  },
+  "07 reach far side": {
+   "v0.1_components": 1,
+   "v0.2_components": 1
+  },
+  "08 bend forward": {
+   "v0.1_components": 1,
+   "v0.2_components": 1
+  },
+  "09 squat": {
+   "v0.1_components": 1,
+   "v0.2_components": 1
+  },
+  "10 twist + arm": {
+   "v0.1_components": 1,
+   "v0.2_components": 1
+  }
+ },
+ "stress_components": {
+  "R arm abduction (rhythm on)": [
+   1,
+   1,
+   1,
+   1,
+   1
+  ],
+  "R elbow flex @abd30": [
+   1,
+   1,
+   1,
+   1,
+   1
+  ],
+  "torso twist \u22121\u2026+1 (arm R 30\u00b0)": [
+   1,
+   1,
+   1,
+   1,
+   1
+  ],
+  "torso bend 0 / .3 / .6 / .9 / 1.2": [
+   1,
+   1,
+   1,
+   1,
+   1
+  ],
+  "squat 0 / .3 / .6 / .85 / 1.1": [
+   1,
+   1,
+   1,
+   1,
+   1
+  ],
+  "weight shift / shrug / lean \u00b112": [
+   1,
+   1,
+   1,
+   1,
+   1
+  ]
+ },
+ "reel_ground_contact": {
+  "frames": 600,
+  "max_support_foot_error_px": 0.0,
+  "max_second_foot_float_px": 0.0,
+  "frames_with_foot_float_gt_4px": 0,
+  "max_root_drop_px": 74.6
+ },
+ "note_on_metrics": "Silhouette-connectivity only proves nothing detaches; it cannot prove correct occlusion. Foot contact numbers are computed from the same solver that draws the legs (self-consistency), not measured in pixels."
+}
