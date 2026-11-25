@@ -1,4 +1,11 @@
 {
   "library_version": "0.1.0",
-  "characters": []
+  "characters": [
+    {
+      "id": "ucup",
+      "latest_version": "0.4.0-draft",
+      "status": "draft_not_approved_not_runtime_verified",
+      "path": "characters/ucup/"
+    }
+  ]
 }
