@@ -1,0 +1,33 @@
+{
+  "id": "ucup", "version": "0.4.0-draft", "based_on": "0.3.0-draft front rig (unchanged) + NEW side-view rig + NEW shared gait driver",
+  "status": "side-view rig + front/side walk, motion-tested (draft). NOT approved, NOT promoted to library",
+  "interpretation": "'jalan ke samping, tampak samping' = true side/profile view walking (character faces screen-left like the reference sheet; facing='R' mirrors it). Front walk = walking toward the camera.",
+  "what_is_new": {
+    "side_rig": "ucup_side.py: profile head (nose, ear, backwards cap with front strap arch and short rear visor, rear hair mass), side torso with partial logo, near/far arm and leg (far limbs shaded darker), side sneaker. Built from the reference side view. Same palette, joint heights and dimensions as the front rig.",
+    "gait_driver": "gait.py: ONE sagittal-plane walk (1.0 s cycle, 60% stance, step 140 px, heel-strike -> flat -> heel-off -> swing). IK per leg, planted contact (heel then ball pivot), hip bob 8 px, arm swing opposite to the same-side leg.",
+    "front_walk": "walk_front.py: front rig driven by the SAME gait via projection: thigh scale = cos(thigh angle), shank scale = cos(shank angle), hip height identical, hip tilt/sway/twist, arm foreshortening. ucup_rig4.py = ucup_rig3 + leg_override."
+  },
+  "leg_mapping": "leg A = near leg (side) = screen-RIGHT leg (front); leg B = far = screen-LEFT. Arm A is on the same side as leg A and swings opposite to it.",
+  "verified": {
+    "rendered_rig_vs_ik_target_px": "max 0.45 (marker detection in rendered SVG)",
+    "stance_foot_slide_px_per_frame": "max 0.09 (expected ground motion 4.67 px at 60 samples/cycle)",
+    "front_vs_side_ankle_y_px": "max 0.19 (both legs); hip y identical",
+    "loop_closure": "pose difference frame 0 vs end of cycle = 0",
+    "leg_reach_margin_px": "min 3.6 (no over-extension); knee flex 17..68 deg",
+    "silhouette": "single connected piece in all 60 sampled phases, side and front",
+    "svg": "no raster, no duplicate ids, all side expression/hand/cap/facing combinations render valid"
+  },
+  "unresolved": [
+    "Front walk is a projection, not a true 3D turn: shoes do not show heel-strike/toe-off pitch (ankle y matches, shoe stays flat), and arm foreshortening is subtle.",
+    "No transition between front and side (no turning), no start/stop ramp, no run, no walk-away (back view not built).",
+    "Side view only has walking arms: hands = relaxed/fist; no side-view gestures (point, wave, etc.).",
+    "Profile expressions reuse the front parameters but are subtle (sad vs neutral is faint); wink and mask are not drawn in profile.",
+    "Cap-off profile hair is rough (front swoop not matched to any reference).",
+    "Small collar tick marks stick out at the neck sides in profile.",
+    "Facing right is a mirror: the partial chest logo is mirrored.",
+    "Far-side limb shading is a new choice, not taken from the reference.",
+    "Side rig proportions were checked by eye against the reference side figure only; cap tilt and visor length are approximations.",
+    "Not loaded or verified in MEKANIVO Motion; no library entry created."
+  ],
+  "validation": "source/validation_report_v04.json"
+}
