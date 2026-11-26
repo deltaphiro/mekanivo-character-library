@@ -1,0 +1,18 @@
+{
+  "id": "ucup", "version": "0.4.1-draft", "based_on": "0.4.0-draft",
+  "status": "logo correction, draft. NOT approved, NOT promoted to library",
+  "change": "Chest logo 'm.' rebuilt to match the reference. Applies to the front rig (ucup_rig3/ucup_rig4) and the side rig (ucup_side). Nothing else was changed.",
+  "diagnosis": "Since v0.1 the logo was an invented shape: a thin-stroke 'm' with three full-height legs and a small dot beside it. The reference logo is a heavy white 'm' with narrow round-topped counters, a right leg cut off on a diagonal, and the orange dot sitting in that cut, bottom aligned with the stems.",
+  "fix": "ucup_logo.py: clean vector path measured from the reference hero logo (stems 90 wide, counters 114 with r57 round tops, truncated right leg, dot centre (489,288) r76 in a 505x365 box), fitted to the reference mask. Front: 60 units wide incl. dot, centred on the chest. Side: the same logo clipped by the chest silhouette so only the right arch + dot show at the front edge, as in the reference side view.",
+  "measured": {"m_shape_IoU_vs_reference": 0.977, "dot_centre_error_units": "<1", "dot_radius": "76 vs 76 measured (threshold-dependent, about 72-80)"},
+  "verified_in_output": ["logo_check.png: reference vs old vs new, overlay, chest closeups front and side", "walk cycle sheet and videos re-rendered with the new logo (front and side)", "all side expression/hand/cap/facing combos and front twist/bend extremes render valid", "walk metrics unchanged: rig vs IK <=0.45 px, front vs side ankle y <=0.19 px, silhouette single piece in all sampled frames"],
+  "unresolved": [
+    "Previews of v0.1, v0.2, v0.3 (and the earlier v0.4 package) still show the OLD logo; only the v0.4.1 outputs and source carry the fix. The v0.1/v0.2 sources keep the old logo as history.",
+    "The reference logo is a small, blurry JPEG: the vector shape was fitted to it (IoU 0.977), so edge details (the tiny flag at the top-left, exact corner radii) are approximations.",
+    "Logo size and height on the chest were matched by eye/ratio to the reference hero figure, not pixel-measured against the torso.",
+    "Facing right is still a mirror: the partial side logo is mirrored.",
+    "All earlier open items of v0.4 remain (front walk is a projection, no turning, no side gestures, rough cap-off profile hair).",
+    "Not verified in MEKANIVO Motion; no library entry."
+  ],
+  "validation": "source/validation_report_v041.json"
+}

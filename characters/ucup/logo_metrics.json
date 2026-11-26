@@ -1,0 +1,15 @@
+{
+ "m_shape_IoU_vs_reference": 0.9774,
+ "dot_reference(cx,cy,r)": [
+  489.3,
+  288.0,
+  75.9
+ ],
+ "dot_vector(cx,cy,r)": [
+  489,
+  288,
+  76
+ ],
+ "logo_width_on_chest_units": 60,
+ "logo_aspect_w_over_h": 1.548
+}

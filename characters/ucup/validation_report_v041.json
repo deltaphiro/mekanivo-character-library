@@ -1,0 +1,70 @@
+{
+ "rig_vs_ik_marker_error_px": {
+  "max": 0.45,
+  "mean": 0.36,
+  "samples": 120
+ },
+ "foot_slide_px_per_frame(60/cycle) vs expected 4.67": {
+  "max": 0.09,
+  "mean": 0.05,
+  "stance_samples": 32
+ },
+ "front_vs_side_ankle_y_error_px": {
+  "legA_max": 0.192,
+  "legB_max": 0.192,
+  "hip_y_max": 0.0
+ },
+ "gait": {
+  "cycle_s": 1.0,
+  "stance_fraction": 0.6,
+  "step_px": 140.0,
+  "stride_px": 280.0,
+  "ground_speed_px_s": 280.0,
+  "min_leg_reach_margin_px": 3.58,
+  "knee_flex_deg": [
+   17.1,
+   67.6
+  ],
+  "hip_bob_px": 8.0,
+  "loop_closure_pose_diff_max": 0.0
+ },
+ "logo": {
+  "m_shape_IoU_vs_reference": 0.9774,
+  "dot_reference(cx,cy,r)": [
+   489.3,
+   288.0,
+   75.9
+  ],
+  "dot_vector(cx,cy,r)": [
+   489,
+   288,
+   76
+  ],
+  "logo_width_on_chest_units": 60,
+  "logo_aspect_w_over_h": 1.548
+ },
+ "side_svg": {
+  "embedded_raster": false,
+  "duplicate_ids": 0
+ },
+ "invalid_renders": [],
+ "silhouette_not_single_piece_frames": {
+  "side": 0,
+  "front": 0
+ },
+ "mp4_walk_side": {
+  "width": 380,
+  "height": 980,
+  "nb_frames": "120"
+ },
+ "mp4_walk_front": {
+  "width": 480,
+  "height": 980,
+  "nb_frames": "120"
+ },
+ "mp4_walk_sync_side_front": {
+  "width": 870,
+  "height": 1020,
+  "nb_frames": "120"
+ }
+}
