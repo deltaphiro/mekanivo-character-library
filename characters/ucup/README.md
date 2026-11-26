@@ -1,5 +1,10 @@
-# Ucup v0.4.1-draft - perbaikan logo baju (belum di-approve, belum masuk library)
-Hanya logo "m." yang diubah (front + side). Preview/walk dirender ulang dengan logo yang benar.
-preview/logo_check.png = bukti: referensi vs logo lama vs baru, overlay, closeup dada front dan side.
-source/ucup_logo.py = logo vektor. Regenerasi: cd source ; python3 build_walk.py ; python3 build_logo_check.py (UCUP_OUT=/path untuk ganti output)
-Butuh: cairosvg, pillow, scipy, lxml, numpy, matplotlib, ffmpeg.
+# Ucup
+
+Versi karakter disimpan terpisah agar source, preview, dan status tiap iterasi tidak tercampur.
+
+## Versi
+- **v0.4.1-draft** — koreksi logo dada “m.”, berbasis v0.4.0. Belum approved dan belum diverifikasi di MEKANIVO Motion. Lihat [README v0.4.1](v0.4.1-draft/README.md).
+- **v0.4.0-draft** — side-view rig dan shared front/side walk cycle. Belum approved.
+- **v0.3.0-draft** — versi draft sebelumnya.
+
+Jangan gunakan versi berstatus draft sebagai production-ready sebelum lolos uji runtime MEKANIVO Motion dan QC.
